@@ -1,3 +1,3 @@
 # !/bin/bash
 
-apt autoremove proftpd git -y && apt autoclean
+systemctl stop proftpd ssh && apt autoremove proftpd git -y && apt autoclean
